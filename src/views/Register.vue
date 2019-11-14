@@ -4,7 +4,7 @@
     <div class="header">
       <div class="header-content container">
         <div class="logo">
-          <img src="https://aimg8.dlssyht.cn/u/1885686/module/simplepicbackground/1885686/7293/14585082_1564535940.png?x-oss-process=image/resize,m_fixed,w_133,h_139,limit_0" alt="享乐居">
+          <img src="https://aimg8.dlssyht.cn/u/1885686/module/simplepicbackground/1885686/7293/14585082_1564535940.png?x-oss-process=image/resize,m_fixed,w_133,h_139,limit_0" alt="享乐居logo" style="height: 80px;">
           <img src="../../static/images/logo2.png" style="width: 190px;">
         </div>
         <div class="backHome">
@@ -16,7 +16,7 @@
     <div class="registerModule">
       <div class="registerBox container animated fadeInDown">
         <div class="registerForm" style="display: flex; flex-direction: column; align-items: center; width: 100%;">
-          <h1 style="font-size: 20px; margin-top: 40px;">会员登录</h1>
+          <h1 style="font-size: 20px; margin-top: 40px;">会员注册</h1>
           <div class="register-message" style="margin-top: 20px; width: 100%;">
             <h4>用户名：</h4>
             <el-input prefix-icon="iconfont icon-yonghuming" v-model="username" placeholder="请输入用户名"></el-input>

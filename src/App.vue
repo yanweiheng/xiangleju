@@ -7,6 +7,7 @@
 <style lang="scss">
 body {
   min-width: 1440px;
+  min-height: 969px;
 }
 * {
   padding: 0;

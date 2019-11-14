@@ -3,7 +3,7 @@
     <div class="header">
       <div class="header-content container">
         <div class="logo">
-          <img src="https://aimg8.dlssyht.cn/u/1885686/module/simplepicbackground/1885686/7293/14585082_1564535940.png?x-oss-process=image/resize,m_fixed,w_133,h_139,limit_0" alt="享乐居">
+          <img src="https://aimg8.dlssyht.cn/u/1885686/module/simplepicbackground/1885686/7293/14585082_1564535940.png?x-oss-process=image/resize,m_fixed,w_133,h_139,limit_0" alt="享乐居logo" style="height: 80px;">
           <img src="../../static/images/logo2.png" style="width: 190px;">
         </div>
         <div class="backHome">
@@ -41,7 +41,7 @@ export default {
   data () {
     return {
       contentStyleObj:{
-　　　　 height:''
+　　　　 height: ''
   　　},
       username: "",
       password: "",
@@ -53,12 +53,22 @@ export default {
     },
     register () {
       this.$router.push('/register')
+    },
+    getInfo () {
+      this.$ajax.get('../../mock/login.json')
+            .then(res => {
+              console.log(res.data)
+            })
+            .catch(err => {
+              console.log(err)
+            })
     }
   },
 
   created () {
-    window.addEventListener('resize', this.getHeight);
+    window.addEventListener('resize', this.getHeight)
     this.getHeight()
+    this.getInfo()
   },
 
   destroyed () {

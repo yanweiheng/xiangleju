@@ -1,0 +1,13 @@
+{
+  "reset": true,
+  "data": {
+    "user1": {
+      "username": "999999",
+      "password": "999999"
+    },
+    "user2": {
+      "username": "123456",
+      "password": "123456"
+    }
+  }
+}
